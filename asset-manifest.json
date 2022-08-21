@@ -1,0 +1,12 @@
+{
+  "files": {
+    "main.css": "/online-calculator/static/css/main.432d4ddd.css",
+    "main.js": "/online-calculator/static/js/main.56297fa7.js",
+    "static/js/27.fdc12c64.chunk.js": "/online-calculator/static/js/27.fdc12c64.chunk.js",
+    "index.html": "/online-calculator/index.html"
+  },
+  "entrypoints": [
+    "static/css/main.432d4ddd.css",
+    "static/js/main.56297fa7.js"
+  ]
+}
