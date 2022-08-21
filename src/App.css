@@ -1,38 +1,89 @@
-.App {
-  text-align: center;
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@500&display=swap');
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  -webkit-user-select: none;
+  -webkit-user-drag: none;
+  -webkit-app-region: none;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+body {
+  background-color: #800020;
+  display: grid;
+  place-content: center;
+  font-family: 'Montserrat', sans-serif;
+  height: 100vh;
+  font-size: 30px;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.container {
+  height: 80vh;
+  width: 50vh;
+  background-color: white;
+  border-radius: 16px;
+  padding: 16px;
+  -webkit-box-shadow: 7px 7px 5px 0px rgba(50, 50, 50, 0.75);
+  -moz-box-shadow: 7px 7px 5px 0px rgba(50, 50, 50, 0.75);
+  box-shadow: 7px 7px 5px 0px rgba(50, 50, 50, 0.75);
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
+.wrapper {
+  display: grid;
+  height: 100%;
+  width: 100%;
+  grid-template-columns: repeat(4, 1fr);
+  grid-template-rows: repeat(6, 1fr);
+  gap: 10px;
+}
+
+.screen {
+  grid-column: 1 / -1;
+  color: #800020;
+  text-align: right;
+  padding: 8px;
+  font-size: 40px;
+  overflow-x: auto;
+  overflow-y: hidden;
+}
+
+.btn {
+  display: grid;
+  place-content: center;
+  background-color: #d3d3d3;
+  border-radius: 50%;
+  color: black;
+  cursor: pointer;
+  font-weight: bold;
+}
+
+.btn:hover {
+  background-color: gray;
+}
+
+.light-gray {
+  background-color: #800020;
   color: white;
 }
 
-.App-link {
-  color: #61dafb;
+.light-gray:hover {
+  background-color: white;
+  color: #800020;
+  border: 2px solid #800020;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.orange {
+  background-color: #800020;
+  color: white;
+}
+
+.orange:hover {
+  border: 2px solid #800020;
+  background-color: white;
+  color: #800020;
+}
+
+.zero {
+  grid-column: 1/span 2;
 }
